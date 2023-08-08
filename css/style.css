@@ -1,0 +1,286 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* css variable */
+:root{
+    --navbar-height: 58px;
+}
+
+/* navigation bar */
+#navbar{
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Navigation Bar: Image and logo */
+#logo{
+    margin: 2px 10px;
+}
+
+#logo img{
+    height: 60px;
+    margin: 0px 15px;
+}
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    height: 12%;
+    width: 100%;
+    top: 0px;
+    opacity: 0.3;
+}
+
+#navbar ul li{
+    list-style: none;
+    margin: 15px;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a{
+    
+    font-weight: 550;
+    color: black;
+    display: block;
+    padding: 3px 23px;
+    border-radius: 5px;
+    text-decoration: none;
+    /* opacity: 0.4; */
+}
+
+#navbar ul li a:hover{
+    color: white;
+    background-color:grey;
+}
+
+/* home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 230px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    font-family: 'Lato', sans-serif;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('../img/food4.jpg') no-repeat center center/cover;
+    top: 0px;
+    height: 82%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#home h1{
+    /* color: white; */
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+
+}
+
+#home p{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+}
+
+.btn{
+    border: 2px solid white;
+    padding: 5px 5px;
+    background-color: rgb(187, 81, 81);
+    border-radius: 10px;
+    margin: 10px ;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.1rem;
+}
+
+.btn:hover{
+    background-color: rgb(160, 116, 116);
+    /* color: black; */
+}
+
+/* service section */
+#service-container h1{
+    background-color: #e5e0e0;
+    border-radius: 10px;
+
+}
+#service-container::before{
+    background: url('../img/service.jpg') no-repeat center center/cover;
+    position: relative;
+    top: 0px;
+    height: 50%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#service{
+    color: black;
+    margin: 0px 34px;
+    display: flex;
+}
+#service .box{
+    border: 2px solid brown;
+    margin: 3px 6px;
+    padding: 12px;
+    border-radius: 25px;
+    background-color: #f0fdff;
+    height: 250px;
+}
+#service .box img{
+    display: flex;
+    /* display: block; */
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 150px;
+    margin: auto;
+    border-radius: 23px;
+}
+
+/* client section */
+
+#client-service{
+    color: black;
+    position: relative;
+    
+    height: 300px;
+}
+
+#client-service::before{
+    content: " ";
+    position: absolute;
+    background: url('../img/food3.jpg' ) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    margin: 4px;
+    left: 0px;
+    right: 0px;
+}
+
+.client-item{
+    padding: 27px;
+    display: flex;
+}
+
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#client img{
+    height: 100px;
+}
+
+/* contact section */
+
+#contact{
+    position: relative;
+    height: 530px;
+}
+
+#contact::before{
+    content: " ";
+    position: absolute;
+    background: url('../img/back.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#contact-box{
+    font-weight: bold;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 23px;
+    padding: 0px 23px;
+}
+
+#contact-box form{
+    width: 30%;
+}
+
+#contact-box label{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3rem;
+}
+
+#contact-box input,
+#contact-box textarea{
+    border-radius: 8px;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.05rem;
+}
+
+/* utility Class */
+footer{
+    background-color: black;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    padding: 9px 20px;
+}
+h2{
+    font-size: 1.8rem;
+    font-family: 'Lato', sans-serif;
+    padding: 10px;
+}
+
+#head{
+    color: black;
+    
+}
+.h-primary{
+    color: black;
+    font-size: 3.1rem;
+    padding: 25px;
+    font-family: 'Lato', sans-serif;
+}
+.center{
+    text-align: center;
+}
+p{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+
+}
+ 
+button{
+    padding: 4px;
+    border-radius: 7px;
+    background-color: rgb(202, 85, 85);
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    font-weight: 550;
+}
+
+button:hover{
+    background-color: rgb(179, 177, 177);
+}
